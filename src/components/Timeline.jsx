@@ -17,15 +17,15 @@ for (let i = totalImages; i >= 1; i--) {
   }
 }
 
-// Divide images into 3 eras with fun emojis
+// Divide images into 2 eras starting from Refundação
 const eras = [
   {
-    title: 'Fundação',
-    emoji: '🌱',
-    subtitle: 'O Início de Tudo',
+    title: 'Refundação',
+    emoji: '✨',
+    subtitle: 'Nova Fase, Mesma Chama',
     description:
-      'Tudo começou com um grupo de jovens cheios de vontade de viver a fé! Os primeiros encontros, as primeiras amizades e o nascimento de algo muito especial.',
-    images: allImages.slice(0, 12),
+      'Um novo capítulo com energia renovada! A refundação trouxe novos rostos, novas histórias, mas o mesmo amor por Deus e pela comunidade.',
+    images: allImages.slice(0, 18),
   },
   {
     title: 'Caminhada',
@@ -33,15 +33,7 @@ const eras = [
     subtitle: 'Crescimento & Aventuras',
     description:
       'Retiros inesquecíveis, louvores de arrepiar e momentos que ficam pra sempre no coração. O Elohim cresceu e se fortaleceu na fé!',
-    images: allImages.slice(12, 24),
-  },
-  {
-    title: 'Refundação',
-    emoji: '✨',
-    subtitle: 'Nova Fase, Mesma Chama',
-    description:
-      'Um novo capítulo com energia renovada! A refundação trouxe novos rostos, novas histórias, mas o mesmo amor por Deus e pela comunidade.',
-    images: allImages.slice(24),
+    images: allImages.slice(18),
   },
 ]
 

@@ -404,7 +404,7 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(to bottom, var(--gold), var(--blue), var(--gold), var(--blue));
+  background: var(--blue);
   transform: translateX(-50%);
   opacity: 0.18;
   border-radius: 2px;
@@ -484,10 +484,10 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: var(--gold);
+  background: var(--blue);
   border: 3px solid var(--dark);
   z-index: 3;
-  box-shadow: 0 0 20px rgba(200, 162, 79, 0.4), 0 0 6px rgba(200, 162, 79, 0.6);
+  box-shadow: 0 0 20px rgba(66, 171, 251, 0.4), 0 0 6px rgba(66, 171, 251, 0.6);
 }
 
 /* Horizontal connector from dot to card */
@@ -502,13 +502,13 @@
 .path-node--left .path-node-connector {
   left: calc(45% + 7px);
   right: 50%;
-  background: linear-gradient(90deg, rgba(200, 162, 79, 0.35), rgba(200, 162, 79, 0.08));
+  background: rgba(66, 171, 251, 0.2);
 }
 
 .path-node--right .path-node-connector {
   left: 50%;
   right: calc(45% + 7px);
-  background: linear-gradient(90deg, rgba(200, 162, 79, 0.08), rgba(200, 162, 79, 0.35));
+  background: rgba(66, 171, 251, 0.2);
 }
 
 /* The image card */
@@ -545,14 +545,14 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold), var(--blue));
+  background: var(--blue);
   color: var(--dark);
   font-size: 0.75rem;
   font-weight: 800;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(200, 162, 79, 0.3);
+  box-shadow: 0 4px 15px rgba(66, 171, 251, 0.3);
   z-index: 4;
 }
 
