@@ -19,7 +19,7 @@
 }
 
 .navbar-brand img {
-  height: 3.5rem;
+  height: 5rem;
   width: auto;
 }
 
@@ -822,15 +822,15 @@
 }
 
 .footer-brand {
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  font-weight: 900;
-  letter-spacing: 6px;
-  margin-bottom: 0.35rem;
-  background: linear-gradient(135deg, var(--gold), var(--blue));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.footer-brand img {
+  height: 4rem;
+  width: auto;
+  filter: brightness(0.8);
 }
 
 .footer-tagline {
