@@ -1,3 +1,5 @@
+import logo from '../Assets/ELOHIM logo.svg'
+
 function Hero() {
   return (
     <section className="hero" id="inicio">
@@ -10,7 +12,7 @@ function Hero() {
       <div className="hero-content">
         <div className="hero-emoji">&#x271D;</div>
         <h1 className="hero-title">
-          <span>ELOHIM</span>
+          <img src={logo} alt="ELOHIM" />
         </h1>
         <p className="hero-subtitle">Grupo de Jovens Católico</p>
         <p className="hero-description">

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import logo from '../Assets/ELOHIM logo.svg'
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -18,7 +19,9 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <a href="#inicio" className="navbar-brand">ELOHIM</a>
+      <a href="#inicio" className="navbar-brand">
+        <img src={logo} alt="ELOHIM" />
+      </a>
 
       <button
         className={`navbar-toggle ${menuOpen ? 'open' : ''}`}
