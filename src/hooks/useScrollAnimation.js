@@ -22,13 +22,14 @@ export function useScrollAnimation(options = {}) {
     )
 
     // Observe the element itself and all children with animation classes
-    const animatedElements = element.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right')
+    const animatedElements = element.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .pop-in')
     animatedElements.forEach((el) => observer.observe(el))
 
     if (
       element.classList.contains('fade-in') ||
       element.classList.contains('fade-in-left') ||
-      element.classList.contains('fade-in-right')
+      element.classList.contains('fade-in-right') ||
+      element.classList.contains('pop-in')
     ) {
       observer.observe(element)
     }

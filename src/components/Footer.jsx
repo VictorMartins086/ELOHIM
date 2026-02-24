@@ -7,7 +7,7 @@ function Footer() {
       <p className="footer-tagline">Grupo de Jovens Católico</p>
       <hr className="footer-divider" />
       <p className="footer-copy">
-        &copy; {year} Elohim. Todos os direitos reservados.
+        &copy; {year} Elohim &middot; Feito com <span className="footer-heart">♥</span> e muita fé
       </p>
     </footer>
   )
