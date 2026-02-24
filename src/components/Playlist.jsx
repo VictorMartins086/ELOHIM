@@ -1,4 +1,7 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import qrCode from '../Assets/qr_code.svg'
+
+const SPOTIFY_URL = 'https://open.spotify.com/playlist/0lMTzUpSXNUnI3Px3alsE2?si=Lu4egAPrQE-pn9TDV00zig&pi=UDVgkIBmTseL4'
 
 function Playlist() {
   const sectionRef = useScrollAnimation()
@@ -20,18 +23,7 @@ function Playlist() {
       <div className="playlist-content fade-in">
         <div className="playlist-card">
           <div className="qr-wrapper">
-            {/* 
-              Substitua este placeholder pela imagem do seu QR Code.
-              Coloque a imagem em src/Assets/ e importe-a, ou use uma URL direta.
-              Exemplo: <img src={qrCodeImage} alt="QR Code Playlist" />
-            */}
-            <div className="qr-placeholder">
-              <span className="qr-placeholder-icon icon-gold">📱</span>
-              <span>QR CODE</span>
-              <span style={{ fontSize: '0.65rem', opacity: 0.6 }}>
-                Substitua pela imagem
-              </span>
-            </div>
+            <img src={qrCode} alt="QR Code Playlist Elohim" />
           </div>
 
           <div className="playlist-info">
@@ -41,7 +33,7 @@ function Playlist() {
               conectam a Deus e fortalecem nossa fé em cada encontro.
             </p>
             <a
-              href="#"
+              href={SPOTIFY_URL}
               className="playlist-link"
               target="_blank"
               rel="noreferrer"
