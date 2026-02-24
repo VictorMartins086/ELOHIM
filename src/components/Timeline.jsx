@@ -17,6 +17,20 @@ for (let i = totalImages; i >= 1; i--) {
   }
 }
 
+// Captions cycling per photo
+const captions = [
+  'Momentos que ficam pra sempre no coração 💛',
+  'Unidos na fé e na amizade ✨',
+  'Deus no centro de tudo que fazemos 🙏',
+  'Louvor que aquece a alma 🎶',
+  'Crescendo juntos em comunidade 🌱',
+  'Retiro inesquecível — memórias eternas 🏕️',
+  'A presença de Deus em cada detalhe 🕊️',
+  'Risadas, fé e muito amor 💙',
+  'Encontros que transformam vidas 🌟',
+  'Nossa família crescendo a cada dia 🤝',
+]
+
 // Divide images into 2 eras starting from Refundação
 const eras = [
   {
@@ -120,6 +134,9 @@ function Timeline() {
                         alt={`Elohim - ${era.title} - Foto ${currentGlobal + 1}`}
                         loading="lazy"
                       />
+                      <p className="path-card-caption">
+                        {captions[currentGlobal % captions.length]}
+                      </p>
                     </div>
                   </div>
                 )

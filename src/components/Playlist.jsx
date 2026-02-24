@@ -26,7 +26,7 @@ function Playlist() {
               Exemplo: <img src={qrCodeImage} alt="QR Code Playlist" />
             */}
             <div className="qr-placeholder">
-              <span className="qr-placeholder-icon">📱</span>
+              <span className="qr-placeholder-icon icon-gold">📱</span>
               <span>QR CODE</span>
               <span style={{ fontSize: '0.65rem', opacity: 0.6 }}>
                 Substitua pela imagem
@@ -35,7 +35,7 @@ function Playlist() {
           </div>
 
           <div className="playlist-info">
-            <h3>♫ Playlist Elohim</h3>
+            <h3><span className="icon-gold">♫</span> Playlist Elohim</h3>
             <p>
               As músicas que fazem parte da nossa caminhada. Louvores que nos
               conectam a Deus e fortalecem nossa fé em cada encontro.
@@ -46,7 +46,7 @@ function Playlist() {
               target="_blank"
               rel="noreferrer"
             >
-              ▶ Ouvir Playlist
+              <span className="icon-gold-dark">▶</span> Ouvir Playlist
             </a>
           </div>
         </div>

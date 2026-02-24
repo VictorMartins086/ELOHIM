@@ -1,3 +1,196 @@
+/* ========== PARTICLES BACKGROUND ========== */
+.particles-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  animation: particleFloat linear infinite;
+}
+
+.particle--1 {
+  width: 4px; height: 4px;
+  background: var(--gold);
+  left: 8%; top: 15%;
+  animation-duration: 18s;
+  animation-delay: 0s;
+}
+.particle--2 {
+  width: 3px; height: 3px;
+  background: var(--blue);
+  left: 22%; top: 65%;
+  animation-duration: 22s;
+  animation-delay: -3s;
+}
+.particle--3 {
+  width: 5px; height: 5px;
+  background: var(--gold);
+  left: 45%; top: 30%;
+  animation-duration: 20s;
+  animation-delay: -7s;
+}
+.particle--4 {
+  width: 3px; height: 3px;
+  background: var(--blue);
+  left: 70%; top: 80%;
+  animation-duration: 24s;
+  animation-delay: -2s;
+}
+.particle--5 {
+  width: 4px; height: 4px;
+  background: var(--gold);
+  left: 85%; top: 20%;
+  animation-duration: 19s;
+  animation-delay: -10s;
+}
+.particle--6 {
+  width: 2px; height: 2px;
+  background: var(--blue);
+  left: 55%; top: 50%;
+  animation-duration: 25s;
+  animation-delay: -5s;
+}
+.particle--7 {
+  width: 6px; height: 6px;
+  background: var(--gold);
+  left: 15%; top: 85%;
+  animation-duration: 21s;
+  animation-delay: -12s;
+}
+.particle--8 {
+  width: 3px; height: 3px;
+  background: var(--blue);
+  left: 92%; top: 55%;
+  animation-duration: 17s;
+  animation-delay: -8s;
+}
+.particle--9 {
+  width: 4px; height: 4px;
+  background: var(--gold);
+  left: 35%; top: 10%;
+  animation-duration: 23s;
+  animation-delay: -14s;
+}
+.particle--10 {
+  width: 2px; height: 2px;
+  background: var(--blue);
+  left: 65%; top: 40%;
+  animation-duration: 26s;
+  animation-delay: -6s;
+}
+.particle--11 {
+  width: 5px; height: 5px;
+  background: var(--gold);
+  left: 50%; top: 72%;
+  animation-duration: 20s;
+  animation-delay: -9s;
+}
+.particle--12 {
+  width: 3px; height: 3px;
+  background: var(--blue);
+  left: 3%; top: 45%;
+  animation-duration: 22s;
+  animation-delay: -15s;
+}
+
+@keyframes particleFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(0) translateX(0) scale(0.5);
+  }
+  10% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.3;
+    transform: translateY(-120px) translateX(40px) scale(1);
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-250px) translateX(-30px) scale(0.5);
+  }
+}
+
+/* Shooting lines */
+.particle-line {
+  position: absolute;
+  height: 1px;
+  border-radius: 1px;
+  opacity: 0;
+  animation: shootLine linear infinite;
+}
+
+.particle-line--1 {
+  width: 80px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  top: 25%;
+  left: -80px;
+  animation-duration: 6s;
+  animation-delay: 0s;
+}
+
+.particle-line--2 {
+  width: 120px;
+  background: linear-gradient(90deg, transparent, var(--blue), transparent);
+  top: 60%;
+  left: -120px;
+  animation-duration: 8s;
+  animation-delay: -3s;
+}
+
+.particle-line--3 {
+  width: 60px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  top: 82%;
+  left: -60px;
+  animation-duration: 7s;
+  animation-delay: -5s;
+}
+
+@keyframes shootLine {
+  0% {
+    opacity: 0;
+    transform: translateX(0) rotate(-3deg);
+  }
+  5% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.15;
+  }
+  95% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(calc(100vw + 200px)) rotate(-3deg);
+  }
+}
+
+/* ========== ICON GOLD GRADIENT ========== */
+.icon-gold {
+  background: linear-gradient(135deg, var(--gold), #e8c95a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.icon-gold-dark {
+  background: linear-gradient(135deg, var(--gold), #d4b366);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* ========== NAVBAR ========== */
 .navbar {
   position: fixed;
@@ -124,6 +317,7 @@
 /* ========== HERO ========== */
 .hero {
   position: relative;
+  z-index: 1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -131,7 +325,7 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
-  background: var(--dark);
+  background: rgba(14, 14, 18, 0.85);
 }
 
 .hero-bg {
@@ -295,7 +489,7 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--gold);
   font-size: 0.7rem;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -319,6 +513,7 @@
 .section {
   padding: 5rem 2rem;
   position: relative;
+  z-index: 1;
 }
 
 .section-header {
@@ -372,7 +567,7 @@
 
 /* ========== TIMELINE PATH ========== */
 .timeline-section {
-  background: var(--dark);
+  background: rgba(14, 14, 18, 0.9);
   padding-bottom: 4rem;
 }
 
@@ -518,6 +713,22 @@
 .path-card:hover .path-card-img {
   filter: brightness(1.1);
   box-shadow: 0 12px 40px rgba(200, 162, 79, 0.15), 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.path-card-caption {
+  margin: 0.6rem 0 0;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  transition: color 0.3s ease;
+  pointer-events: none;
+}
+
+.path-card:hover .path-card-caption {
+  color: var(--gold);
 }
 
 .path-card-number {
@@ -799,8 +1010,10 @@
 .footer {
   padding: 2.5rem 2rem;
   text-align: center;
-  background: var(--dark);
+  background: rgba(14, 14, 18, 0.9);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  z-index: 1;
 }
 
 .footer-brand {
