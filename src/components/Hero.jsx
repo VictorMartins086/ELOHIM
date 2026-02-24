@@ -10,7 +10,6 @@ function Hero() {
       </div>
 
       <div className="hero-content">
-        <div className="hero-emoji">&#x271D;</div>
         <h1 className="hero-title">
           <img src={logo} alt="ELOHIM" />
         </h1>

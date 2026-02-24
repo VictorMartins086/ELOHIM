@@ -21,7 +21,6 @@ for (let i = totalImages; i >= 1; i--) {
 const eras = [
   {
     title: 'Refundação',
-    emoji: '✨',
     subtitle: 'Nova Fase, Mesma Chama',
     description:
       'Um novo capítulo com energia renovada! A refundação trouxe novos rostos, novas histórias, mas o mesmo amor por Deus e pela comunidade.',
@@ -29,7 +28,6 @@ const eras = [
   },
   {
     title: 'Caminhada',
-    emoji: '🔥',
     subtitle: 'Crescimento & Aventuras',
     description:
       'Retiros inesquecíveis, louvores de arrepiar e momentos que ficam pra sempre no coração. O Elohim cresceu e se fortaleceu na fé!',
@@ -71,7 +69,6 @@ function Timeline() {
   return (
     <section className="section timeline-section" id="historia" ref={sectionRef}>
       <div className="section-header fade-in">
-        <div className="section-emoji">📖</div>
         <span className="section-label">Nossa Trajetória</span>
         <h2 className="section-title">
           A História do <span className="section-title-gold">Elohim</span>
@@ -91,7 +88,6 @@ function Timeline() {
               {/* Era marker */}
               <div className="path-era-marker fade-in">
                 <span className="path-era-pill">
-                  <span className="path-era-pill-emoji">{era.emoji}</span>
                   {era.title}
                 </span>
                 <span className="path-era-subtitle">{era.subtitle}</span>

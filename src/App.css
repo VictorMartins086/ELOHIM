@@ -188,16 +188,7 @@
   padding: 0 2rem;
 }
 
-.hero-emoji {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  animation: float 3s ease-in-out infinite;
-}
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-}
 
 .hero-title {
   margin-bottom: 0.5rem;
@@ -335,11 +326,6 @@
   margin-bottom: 4rem;
 }
 
-.section-emoji {
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
-}
-
 .section-label {
   display: inline-block;
   font-size: 0.7rem;
@@ -432,10 +418,6 @@
   font-weight: 700;
   color: var(--gold);
   letter-spacing: 2px;
-}
-
-.path-era-pill-emoji {
-  font-size: 1.25rem;
 }
 
 .path-era-subtitle {
@@ -853,8 +835,4 @@
 .footer-copy {
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.2);
-}
-
-.footer-heart {
-  color: var(--gold);
 }
