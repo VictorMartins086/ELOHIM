@@ -14,7 +14,7 @@ function Hero() {
         <h1 className="hero-title">
           <img src={logo} alt="ELOHIM" />
         </h1>
-        <p className="hero-subtitle">Grupo de Jovens Católico</p>
+        <p className="hero-subtitle">Discipulado Jovem</p>
         <p className="hero-description">
           Somos jovens que caminham juntos na fé, no louvor e na amizade.
           Uma história construída com muito amor, risadas e a presença de Deus!
