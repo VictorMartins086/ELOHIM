@@ -613,9 +613,18 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
 .hero-cta {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.85rem 2.25rem;
   background: linear-gradient(135deg, var(--gold), #d4b366);
@@ -644,6 +653,34 @@
 
 .hero-cta:hover .hero-cta-arrow {
   transform: translateX(4px);
+}
+
+.hero-instagram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2.25rem;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 25px rgba(225, 48, 108, 0.25);
+}
+.hero-instagram:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(225, 48, 108, 0.4);
+}
+.hero-instagram svg {
+  flex-shrink: 0;
 }
 
 .hero-scroll {
@@ -1209,6 +1246,19 @@
   margin: 0 auto 1rem;
   border: none;
   border-radius: 1px;
+}
+
+.footer-instagram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.45);
+  transition: color 0.3s, transform 0.3s;
+  margin-bottom: 1rem;
+}
+.footer-instagram:hover {
+  color: var(--gold);
+  transform: scale(1.15);
 }
 
 .footer-copy {
