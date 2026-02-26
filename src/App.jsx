@@ -4,6 +4,7 @@ import Timeline from './components/Timeline'
 import Playlist from './components/Playlist'
 import Footer from './components/Footer'
 import ParticlesBg from './components/ParticlesBg'
+import BackgroundMusic from './components/BackgroundMusic'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <ParticlesBg />
       <Navbar />
       <Hero />
+      <BackgroundMusic />
       <Timeline />
       <Playlist />
       <Footer />
